@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <title>Afoto Pictures | Photography</title>
+  <meta name="description" content="Afoto Pictures — capturing moments, creating memories.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-icon">◉</span> Afoto <em>Pictures</em></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  <nav id="nav"><a href="#home">Home</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="eyebrow">CAPTURE · CREATE · INSPIRE</p>
+      <h1>Turn moments<br>into <span>memories.</span></h1>
+      <p class="hero-copy">Photography that tells your story — one beautiful frame at a time.</p>
+      <a class="gold-btn" href="#gallery">Explore Gallery ↗</a>
+    </div>
+    <div class="hero-image" role="img" aria-label="Portrait photography"></div>
+  </section>
+  <section class="section" id="gallery">
+    <div class="section-head"><div><p class="eyebrow">A FEW OF MY FAVORITES</p><h2>Photo <span>Gallery</span></h2></div>
+    <div class="filters" id="filters"><button class="active" data-filter="All">All</button><button data-filter="Portraits">Portraits</button><button data-filter="Weddings">Weddings</button><button data-filter="Events">Events</button><button data-filter="Nature">Nature</button></div></div>
+    <div class="gallery" id="galleryGrid"></div>
+  </section>
+  <section class="about section" id="about">
+    <div class="about-photo"></div><div><p class="eyebrow">BEHIND THE LENS</p><h2>Hi, I'm <span>Afoto Sherlie.</span></h2>
+    <p>I'm a photographer who loves capturing real moments, emotions, and stories. From portraits to weddings and events, my goal is to turn your special moments into memories you can keep forever.</p>
+    <p class="signature">Every picture tells a story.</p><a class="outline-btn" href="#contact">Let's work together</a></div>
+  </section>
+  <section class="contact section" id="contact"><p class="eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</p><h2>Have a moment worth <span>capturing?</span></h2><p>Get in touch for bookings, inquiries, or collaborations.</p>
+    <a class="gold-btn" id="whatsappBtn" href="#" target="_blank" rel="noopener">Book a Shoot on WhatsApp ↗</a>
+    <div class="socials"><a href="#" id="instagramLink">Instagram</a><a href="#" id="facebookLink">Facebook</a></div>
+  </section>
+</main>
+<footer><a class="brand" href="#home">Afoto <em>Pictures</em></a><span>© <span id="year"></span> Afoto Pictures · Capturing memories.</span></footer>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button id="closeLightbox" aria-label="Close">×</button><img id="lightboxImg" alt=""><p id="lightboxCaption"></p></div>
+<script src="gallery.js"></script><script src="app.js"></script>
+</body></html>

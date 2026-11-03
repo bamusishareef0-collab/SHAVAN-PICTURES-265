@@ -1,0 +1,10 @@
+{
+  "name": "Afoto Pictures Photography",
+  "short_name": "Afoto Pictures",
+  "description": "Photography portfolio and booking app",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
